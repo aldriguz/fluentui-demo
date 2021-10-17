@@ -2,6 +2,7 @@ import React from 'react';
 import { Stack, Text, Link, FontWeights, IStackTokens } from '@fluentui/react';
 import logo from './logo.svg';
 import './App.css';
+import {ColorPickerBasicExample} from './components/ColorPicker';
 
 const boldStyle = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
@@ -44,6 +45,8 @@ export const App: React.FunctionComponent = () => {
         <Link href="https://developer.microsoft.com/en-us/fluentui#/styles/web">Styles</Link>
         <Link href="https://aka.ms/themedesigner">Theme Designer</Link>
       </Stack>
+
+      <ColorPickerBasicExample />
     </Stack>
   );
 };
